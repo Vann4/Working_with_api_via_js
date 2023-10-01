@@ -1,0 +1,15 @@
+table{
+    margin: auto;
+}
+
+table,
+th,
+td {
+  border: 1px solid;
+  font-size: 30px;
+}
+
+th,
+td {
+  padding: 10px 10px;
+}
