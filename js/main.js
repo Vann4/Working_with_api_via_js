@@ -4,12 +4,10 @@ fetch(url)
   .then((resp) => resp.json())
   .then(function(data) {
     let dataArray = data.data
-//    for (let i=0; i<dataArray.length; i++){
-//        let id = dataArray[i].id;
-//        let first_name = dataArray[i].first_name;
-//        console.log('Request succeeded with JSON response', id, first_name);
-//    }
-    console.log('Request succeeded with JSON response', data);
+    for (let i=0; i<dataArray.length; i++){
+        let id = dataArray[i];
+        console.log('Request succeeded with JSON response', id);
+    }
   }).catch(function(error) {
     console.log('Request failed', error);
   });
